@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="75dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Ajouter tâche"
+            android:textSize="30dp"></TextView>
+
+        <EditText
+            android:id="@+id/name_todo_edit_text"
+            android:textColor="#fff"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="30dp"
+            android:hint="Nom  tâche"
+            android:imeOptions="actionSend"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/todo_day_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/todo_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/show_time_button"
+                app:icon="@drawable/ic_timer_black_24dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:strokeWidth="0dp" />
+
+            <Button
+                android:id="@+id/show_calendar_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:icon="@drawable/ic_today_black_24dp"
+                app:strokeWidth="0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:gravity="left"
+                android:layout_margin="20dp"
+                android:layout_marginRight="8dp"/>
+
+            <Button
+                android:id="@+id/add_todo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_margin="20dp"
+                android:layout_marginRight="8dp"
+                android:text="Ajouter"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

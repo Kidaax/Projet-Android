@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ff555555</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#ff555555</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="color">@color/colorAccent</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="AppTheme.TimePicker" parent="android:Widget.Material.Light.TimePicker">
+        <item name="android:timePickerMode">clock</item>
+        <item name="android:headerBackground">#ff555555</item>
+        <item name="android:numbersSelectorColor">#FFFFFF</item>
+        <item name="android:numbersBackgroundColor">#ff555555</item>
+        <item name="android:numbersTextColor">#000000</item>
+        <item name="android:amPmTextColor">?android:attr/textColorSecondary</item>
+    </style>
+
+
+
+
+
+</resources>

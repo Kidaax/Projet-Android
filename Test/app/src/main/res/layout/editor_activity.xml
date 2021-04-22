@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:background="#808080"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".EditorActivity"
+        android:fitsSystemWindows="true"
+        tools:layout_editor_absoluteX="-121dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary" />
+
+        <EditText
+            android:id="@+id/edit_todo_edit_text"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/todo_day_text_view"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/todo_time_text_view"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/show_calendar_button"
+                app:icon="@drawable/ic_today_black_24dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                android:layout_margin="20dp" />
+
+            <Button
+                android:id="@+id/show_time_button"
+                app:icon="@drawable/ic_timer_black_24dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:strokeWidth="0dp" />
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginRight="8dp"
+                android:text="Ok" />
+
+
+        <!--        Exemple d'un bouton stylisé comme on veut-->
+        <!--        <Button-->
+        <!--            android:id="@+id/remove_todo_button_test"-->
+        <!--            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Delete"-->
+        <!--            android:textColor="#f00"-->
+        <!--            app:iconTint="#0f0"-->
+        <!--            app:backgroundTint="@color/colorAccent"-->
+        <!--            app:icon="@drawable/ic_delete_black_24dp"></Button>-->
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

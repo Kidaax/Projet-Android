@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Todolist</string>
+    <string name="editor_activity">Edition</string>
+</resources>
